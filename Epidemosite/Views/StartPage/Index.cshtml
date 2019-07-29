@@ -1,0 +1,16 @@
+﻿@model Epidemosite.Models.Pages.StartPage
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 @Html.EditAttributes(m => m.Heading)>
+    @(Model.Heading ?? Model.Name)    
+</h1>
+<div>
+    @Html.PropertyFor(m => m.MainBody)
+</div>
+<div>
+    @Html.PropertyFor(m => m.MainContentArea)
+</div>
+

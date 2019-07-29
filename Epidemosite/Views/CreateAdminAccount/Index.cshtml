@@ -1,0 +1,15 @@
+﻿@model EPiServer.Shell.Security.IUIUser
+
+<h4>Create Admin Account Page</h4>
+
+@if (Model == null)
+{
+    <div>Admin doesn't exist.</div>
+    @Html.ActionLink("Create Admin Account", "CreateAdmin", null, new { @class = "btn btn-primary" })
+}
+else
+{
+    <div>Admin account already exists!</div>
+}
+
+

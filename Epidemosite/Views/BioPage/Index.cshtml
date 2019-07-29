@@ -1,0 +1,25 @@
+﻿@model Epidemosite.Models.Pages.BioPage
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 @Html.EditAttributes(m => m.Heading)>
+    @(Model.Heading ?? Model.Name)
+</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            @Html.PropertyFor(m => m.MainBody)
+        </div>
+        <div class="col-4">
+            @Html.PropertyFor(m => m.Accomplishments)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            @Html.PropertyFor(m => m.MainContentArea)
+        </div>
+    </div>
+</div>
+
